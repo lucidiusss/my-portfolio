@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import myPicture from "@/public/assets/photo.jpg";
+import myPicture from "../../public/photo.jpg";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from "next/link";
