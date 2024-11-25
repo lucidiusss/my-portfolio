@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import myPicture from "../../public/photo.jpg";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -41,8 +40,10 @@ export default function Home() {
           <Image
             className="w-20 h-20 sm:w-32 sm:h-32 object-cover rounded-full"
             loader={({ src }) => src}
-            src={myPicture}
+            src="/photo.jpg"
             alt="Photo"
+            width={10}
+            height={10}
           />
         </div>
         <div className="flex flex-col gap-5">
