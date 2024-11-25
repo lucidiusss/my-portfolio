@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-5">
           <h1 className="text-[32px] text-center sm:text-[45px]  text-[#111] font-bold">
-            Hello, I'm Nikita Isaev
+            Hello, I&lsquo;m Nikita Isaev
           </h1>
           <h3 className="text-[25px] text-center sm:text-[30px]  font-semibold">
             Junior Frontend Developer, based in Saint-Petersburg. Open to
