@@ -48,8 +48,12 @@ export default function Main() {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="text-[32px] text-center sm:text-[45px] lg:text-[55px] text-[#111] font-bold">
-            Hello! <br /> I&lsquo;m Nikita, <br /> Junior Frontend Developer
+          <h1 className="text-[32px]  text-center sm:text-[45px] lg:text-[55px] text-[#111] font-bold">
+            <span className="relative">
+              Hello!
+              <br />
+            </span>
+            I&lsquo;m Nikita, <br /> Junior Frontend Developer
           </h1>
           <h3 className="text-[25px] text-center sm:text-[30px] lg:text-[40px]  font-semibold">
             I like to build useful and responsive web applications. Open to
@@ -60,7 +64,6 @@ export default function Main() {
           initial="rest"
           animate="rest"
           whileHover="animated"
-          whileTap="animated"
           className="mt-5 sm:mt-10 lg:mt-16 relative"
         >
           <Link

@@ -1,16 +1,20 @@
 import { IoLogoReact, IoLogoVue } from "react-icons/io5";
 import Project from "./Project";
+import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import controller from "../../public/gamepad.svg";
+import Image from "next/image";
 
 const PROJECTS = [
   {
     title: "Weather App",
-    description: `A simple Weather App built with Vue and OpenWeather API. Allows you to check the weather in any city around the world.`,
+    description: `A simple weather app built with Vue and OpenWeather API, allowing you to check the current weather conditions in any city in the world.`,
     icon: <IoLogoVue className="text-[#43d192] transition w-32 h-32" />,
   },
   {
     title: "Kanban App",
     description:
-      "Kanban App built with React, using local storage to store tasks. Allows you to create, edit and delete tasks.",
+      "Kanban App is built with React and uses local storage to keep track of tasks. It allows users to create, edit, and delete tasks easily.",
     icon: <IoLogoReact className="text-[#61dafb] transition w-32 h-32" />,
   },
 ];
@@ -25,23 +29,26 @@ export default function About() {
           About me
         </h1>
         <p className="text-[#11111180] text-[20px] md:text-[25px] lg:text-[24px] font-medium mb-5">
-          Hello, I am a frontend developer from Saint-Petersburg, Russia.
-          <br />I have been working in this field for 4 months. At the very
-          start i learned Vue library. I created my first project - Weather App
-          and also my first portfolio website. Although it was really
-          easy-to-learn library, i found out there is a lack of powerful and
-          useful libraries, so i decided to switch to React.
+          Hello, my name is Nikita and I am a frontend developer based in
+          Saint-Petersburg, Russia. <br /> I have been working in the field of
+          frontend development for the past 4 months, and during this time, I
+          have learned the Vue library and created my first projects, including
+          a Weather App and a portfolio website.
         </p>
         <p className="text-[#11111180] text-[20px] md:text-[25px] lg:text-[24px] font-medium mb-5">
-          At first i considered React Hooks as something hard for me to
-          understand, but in reality they turned out to be a very powerful
-          features. With React i only built a Kanban App and Astronomy Picture
-          of the Day App so far.
+          Although Vue is a relatively easy-to-learn library, I found that there
+          is a lack of more powerful and useful libraries out there, so I
+          decided to switch to React to expand my skills and explore other
+          options.
+        </p>
+        <p className="text-[#11111180] text-[20px] md:text-[25px] lg:text-[24px] font-medium mb-5">
+          My hobbies include playing video games , watching detective movies and
+          series, and, of course, programming!
         </p>
         <p className="text-[#11111180] text-[20px] md:text-[25px] lg:text-[24px] font-medium">
-          For now I am looking to dive more deep in React and its ecosystem
-          while looking for a job. Really impressed about its benefits and eager
-          to learn more about it.
+          At the moment, I am looking to delve deeper into React and its
+          ecosystem, while also searching for a job. I am really impressed by
+          its benefits and eager to learn more about it.
         </p>
       </div>
       <div className="w-full xl:w-1/2">
@@ -52,6 +59,13 @@ export default function About() {
           {PROJECTS.map((project) => (
             <Project key={project.title} {...project} />
           ))}
+          <Link
+            href="/projects"
+            className="text-[#247bff] self-end group flex flex-row items-center text-[20px] md:text-[25px] lg:text-[24px] font-medium mt-5"
+          >
+            Check out more projects
+            <IoIosArrowRoundForward className="group-hover:translate-x-2 transition" />
+          </Link>
         </div>
       </div>
     </section>
