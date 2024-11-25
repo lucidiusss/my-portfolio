@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Header from "@/app/components/Header";
 import ContentWrapper from "./components/ContentWrapper";
 
-const inter = Inter();
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nikita Isaev - Junior Frontend Developer",
