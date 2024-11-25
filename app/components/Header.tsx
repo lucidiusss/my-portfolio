@@ -3,12 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-  cubicBezier,
-} from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export default function Header() {
   const cubicBezier = [0.32, 0.72, 0, 1];
