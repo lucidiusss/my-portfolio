@@ -41,18 +41,23 @@ export default function Main() {
           <Image
             className="w-20 h-20 sm:w-32 sm:h-32 object-cover rounded-full"
             loader={({ src }) => src}
+            unoptimized
             src="/photo.jpg"
             alt="Photo"
             width={10}
             height={10}
           />
         </div>
-        <div className="flex flex-col gap-5">
-          <h1 className="text-[32px]  text-center sm:text-[45px] lg:text-[55px] text-[#111] font-bold">
-            <span className="relative">
-              Hello!
-              <br />
-            </span>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-[32px] flex gap-1 items-center justify-center text-center sm:text-[45px] lg:text-[55px] text-[#111] font-bold">
+            Hello!
+            <img
+              className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14"
+              src="/wave.svg"
+              alt="wave emoji"
+            />
+          </h1>
+          <h1 className="text-[32px]  text-center sm:text-[45px] lg:text-[55px] text-[#111] font-bold mb-5">
             I&lsquo;m Nikita, <br /> Junior Frontend Developer
           </h1>
           <h3 className="text-[25px] text-center sm:text-[30px] lg:text-[40px]  font-semibold">

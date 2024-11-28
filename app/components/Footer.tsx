@@ -22,7 +22,12 @@ const LINKS = [
 export default function Footer() {
   return (
     <footer className="py-[70px] min-h-screen gap-5 flex flex-col items-center justify-center">
-      <h1 className="xl:text-[32px] text-[#111] font-semibold">
+      <img
+        className="h-18 w-18 animate-bounce"
+        src="/smile.svg"
+        alt="smile emoji"
+      />
+      <h1 className="text-[28px] xl:text-[32px] text-center text-[#111] font-semibold">
         Thanks for checking my website!
       </h1>
       <div className="flex flex-col gap-2 items-center">
@@ -30,7 +35,7 @@ export default function Footer() {
           <Link
             key={link.title}
             href={link.link}
-            className="text-[#8a8a91] xl:text-[24px] font-medium"
+            className="text-[#8a8a91] text-[22px] font-medium"
           >
             {link.title}
           </Link>

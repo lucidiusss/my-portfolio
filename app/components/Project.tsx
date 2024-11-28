@@ -6,8 +6,10 @@ type ProjectProps = {
 
 export default function Project(project: ProjectProps) {
   return (
-    <div className="group flex flex-row items-center gap-5">
-      <div>{project.icon}</div>
+    <div className="group transition rounded-xl flex flex-row items-center gap-5">
+      <div className="group-hover:scale-125 transition ease-in-out duration-300">
+        {project.icon}
+      </div>
       <div>
         <h1 className="text-[25px] md:text-[28px] lg:text-[32px] text-[#111] font-semibold mb-3">
           {project.title}
