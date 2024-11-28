@@ -1,5 +1,5 @@
 import { IoLogoReact, IoLogoVue } from "react-icons/io5";
-import Project from "./Project";
+import Project from "./AboutProject";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -81,7 +81,7 @@ export default function About() {
           ))}
           <Link
             href="/projects"
-            className="text-[#247bff] self-end group flex flex-row items-center text-[20px] md:text-[25px] lg:text-[24px] font-medium mt-5"
+            className="text-[#247bff] hover:text-[#2b61b3] self-end group flex flex-row items-center text-[20px] md:text-[25px] lg:text-[24px] font-medium mt-5"
           >
             Check out more projects
             <IoIosArrowRoundForward className="group-hover:translate-x-2 transition" />

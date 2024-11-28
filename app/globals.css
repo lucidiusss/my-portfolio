@@ -108,3 +108,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

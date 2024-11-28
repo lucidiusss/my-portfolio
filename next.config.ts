@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
     domains: ["localhost", "yourdomain.com", "externaldomain.com"],
     loader: "custom",
   },
-  reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
